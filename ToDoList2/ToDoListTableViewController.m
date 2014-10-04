@@ -51,6 +51,9 @@
     ToDoItem *item3 = [[ToDoItem alloc] init];
     item3.itemName = @"Read a book";
     [self.toDoItems addObject:item3];
+    ToDoItem *item4 = [[ToDoItem alloc] init];
+    item4.itemName = @"Charge Laptop";
+    [self.toDoItems addObject:item4];
 }
 
 #pragma mark - Table view data source
