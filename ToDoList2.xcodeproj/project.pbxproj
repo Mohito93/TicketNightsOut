@@ -18,6 +18,7 @@
 		5BFD44B619E057F100A314E6 /* AddToDoItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BFD44B519E057F100A314E6 /* AddToDoItemViewController.m */; };
 		5BFD44B919E059C200A314E6 /* ToDoListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BFD44B819E059C200A314E6 /* ToDoListTableViewController.m */; };
 		5BFD44BC19E071C600A314E6 /* ToDoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BFD44BB19E071C600A314E6 /* ToDoItem.m */; };
+		E43011B319E0B7D000F7756C /* TicketAdTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E43011B219E0B7D000F7756C /* TicketAdTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		5BFD44B819E059C200A314E6 /* ToDoListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoListTableViewController.m; sourceTree = "<group>"; };
 		5BFD44BA19E071C600A314E6 /* ToDoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToDoItem.h; sourceTree = "<group>"; };
 		5BFD44BB19E071C600A314E6 /* ToDoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToDoItem.m; sourceTree = "<group>"; };
+		E43011B119E0B7D000F7756C /* TicketAdTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TicketAdTableViewController.h; sourceTree = "<group>"; };
+		E43011B219E0B7D000F7756C /* TicketAdTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TicketAdTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +112,8 @@
 				5BFD44B519E057F100A314E6 /* AddToDoItemViewController.m */,
 				5BA0783219E0981C00DE9200 /* SellTicketTableViewController.h */,
 				5BA0783319E0981C00DE9200 /* SellTicketTableViewController.m */,
+				E43011B119E0B7D000F7756C /* TicketAdTableViewController.h */,
+				E43011B219E0B7D000F7756C /* TicketAdTableViewController.m */,
 				5BFD449B19E03B3500A314E6 /* Images.xcassets */,
 				5BFD448E19E03B3500A314E6 /* Supporting Files */,
 			);
@@ -239,6 +244,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E43011B319E0B7D000F7756C /* TicketAdTableViewController.m in Sources */,
 				5BFD44BC19E071C600A314E6 /* ToDoItem.m in Sources */,
 				5BFD449719E03B3500A314E6 /* ViewController.m in Sources */,
 				5BA0783419E0981C00DE9200 /* SellTicketTableViewController.m in Sources */,
