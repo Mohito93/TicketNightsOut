@@ -10,4 +10,6 @@
 
 @interface TicketAdTableViewController : UITableViewController
 
+- (IBAction)unwindToList:(UIStoryboardSegue *)segue;
+
 @end

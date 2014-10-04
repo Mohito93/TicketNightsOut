@@ -25,11 +25,6 @@
 
 @implementation SellTicketTableViewController
 
-- (IBAction)unwindToList:(UIStoryboardSegue *)segue
-{
-    
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     
