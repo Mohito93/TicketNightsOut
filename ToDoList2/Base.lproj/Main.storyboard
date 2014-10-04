@@ -5,10 +5,10 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--My To Do List-->
+        <!--Latest Tickets-->
         <scene sceneID="j5D-ag-7vu">
             <objects>
-                <tableViewController id="NLU-ht-FHb" customClass="ToDoListTableViewController" sceneMemberID="viewController">
+                <tableViewController id="NLU-ht-FHb" customClass="TicketAdTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="R4s-PJ-XRw">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -231,7 +231,7 @@
                             <outlet property="delegate" destination="NLU-ht-FHb" id="4Lg-5m-mEY"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="My To Do List" id="9K8-8G-kJ8">
+                    <navigationItem key="navigationItem" title="Latest Tickets" id="9K8-8G-kJ8">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="XlD-9V-o3t">
                             <connections>
                                 <segue destination="8jb-nH-VDD" kind="modal" id="ngz-Uw-YHS"/>

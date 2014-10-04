@@ -1,43 +1,44 @@
 //
-//  SellTicketTableViewController.m
+//  TicketAdTableViewController.m
 //  ToDoList2
 //
-//  Created by Martin Engelcke on 04/10/2014.
+//  Created by Mohit on 5/10/14.
 //
 //
 
-#import "SellTicketTableViewController.h"
+#import "TicketAdTableViewController.h"
+#import "SellTicket.h"
 
-@interface SellTicketTableViewController ()
+@interface TicketAdTableViewController ()
 
-
-@property (weak, nonatomic) IBOutlet UITextField *eventName;
-@property (weak, nonatomic) IBOutlet UITextField *eventDate;
-@property (weak, nonatomic) IBOutlet UITextField *eventCity;
-@property (weak, nonatomic) IBOutlet UITextField *eventPrice;
-@property (weak, nonatomic) IBOutlet UITextField *personName;
-@property (weak, nonatomic) IBOutlet UITextField *personPhone;
-@property (weak, nonatomic) IBOutlet UITextField *personEmail;
-@property (weak, nonatomic) IBOutlet UITextField *bankeAccount;
-@property (weak, nonatomic) IBOutlet UITextField *bankBankCode;
+@property NSMutableArray *events;
 
 @end
 
-@implementation SellTicketTableViewController
-
-- (IBAction)unwindToList:(UIStoryboardSegue *)segue
-{
-    
-}
+@implementation TicketAdTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.events = [[NSMutableArray alloc] init];
+    [self loadInitialData];
+
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+}
+
+- (void)loadInitialData {
+    SellTicket *event1 = [[SellTicket alloc] init];
+    event1.eventName = @"MLH HACK";
+    event1.eventData = @"4th October 2014";
+    event1.eventCity = @"London";
+    event1.eventPrice = @"$20";
+    event1.sellerName = @"Martin";
+    event1.sellerEmail = @"123@abc.com";
+    event1.sellerPhone = @"07777777777";
+    [self.events addObject:event1];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -56,18 +57,19 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 9;
+    return [self.events count];
 }
 
-/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
+    static NSString *CellIdentifier = @"ListPrototypeCell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    SellTicket *event = [self.events objectAtIndex:indexPath.row];
+    NSString *eventName = event.eventName;
+    NSString *eventDate = event.eventData;
+    NSString *eventPrice = event.eventPrice;
+    cell.textLabel.text = [NSString stringWithFormat:@"%@ - %@ - %@",eventName,eventDate,eventPrice];
     return cell;
 }
-*/
 
 /*
 // Override to support conditional editing of the table view.
