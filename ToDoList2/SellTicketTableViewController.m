@@ -10,6 +10,8 @@
 
 @interface SellTicketTableViewController ()
 
+@property NSMutableArray *events;
+
 @property (weak, nonatomic) IBOutlet UITextField *eventName;
 @property (weak, nonatomic) IBOutlet UITextField *eventDate;
 @property (weak, nonatomic) IBOutlet UITextField *eventCity;
