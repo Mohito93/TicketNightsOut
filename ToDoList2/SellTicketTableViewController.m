@@ -10,6 +10,16 @@
 
 @interface SellTicketTableViewController ()
 
+@property (weak, nonatomic) IBOutlet UITextField *eventName;
+@property (weak, nonatomic) IBOutlet UITextField *eventDate;
+@property (weak, nonatomic) IBOutlet UITextField *eventCity;
+@property (weak, nonatomic) IBOutlet UITextField *eventPrice;
+@property (weak, nonatomic) IBOutlet UITextField *personName;
+@property (weak, nonatomic) IBOutlet UITextField *personPhone;
+@property (weak, nonatomic) IBOutlet UITextField *personEmail;
+@property (weak, nonatomic) IBOutlet UITextField *bankeAccount;
+@property (weak, nonatomic) IBOutlet UITextField *bankBankCode;
+
 @end
 
 @implementation SellTicketTableViewController
@@ -34,13 +44,13 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 #warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 3;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return 4;
 }
 
 /*

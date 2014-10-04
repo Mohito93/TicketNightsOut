@@ -234,7 +234,7 @@
                     <navigationItem key="navigationItem" title="My To Do List" id="9K8-8G-kJ8">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="XlD-9V-o3t">
                             <connections>
-                                <segue destination="iJE-VS-vKM" kind="modal" id="ca3-Gp-zco"/>
+                                <segue destination="8jb-nH-VDD" kind="modal" id="ngz-Uw-YHS"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -244,7 +244,7 @@
             </objects>
             <point key="canvasLocation" x="179" y="155"/>
         </scene>
-        <!--Sell A Ticket-->
+        <!--Add To Do Item-->
         <scene sceneID="mZw-3p-HBw">
             <objects>
                 <viewController id="QQk-4d-eOw" customClass="AddToDoItemViewController" sceneMemberID="viewController">
@@ -269,7 +269,7 @@
                             <constraint firstItem="FTX-Re-ot6" firstAttribute="trailing" secondItem="ben-b6-qwM" secondAttribute="trailingMargin" id="eDi-z8-Rrv"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Sell A Ticket" id="HFn-ho-CJp">
+                    <navigationItem key="navigationItem" title="Add To Do Item" id="HFn-ho-CJp">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="WMJ-SD-Xko">
                             <connections>
                                 <segue destination="k8Y-vo-MJX" kind="unwind" unwindAction="unwindToList:" id="ncZ-Ug-jk8"/>
@@ -290,7 +290,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I2l-4U-exi" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="k8Y-vo-MJX" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1013" y="155"/>
+            <point key="canvasLocation" x="1013" y="-481"/>
         </scene>
         <!--Sell A Ticket-->
         <scene sceneID="Xdp-xg-jlh">
@@ -317,7 +317,7 @@
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ub4-pz-NXQ">
                                                     <rect key="frame" x="125" y="7" width="187" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -336,7 +336,7 @@
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fnM-Nn-tqm">
                                                     <rect key="frame" x="125" y="7" width="187" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -355,7 +355,7 @@
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X8j-dM-QDU">
                                                     <rect key="frame" x="125" y="7" width="187" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -374,7 +374,7 @@
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LVw-Iu-wFi">
                                                     <rect key="frame" x="125" y="7" width="187" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -397,7 +397,7 @@
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dqB-vW-euw">
                                                     <rect key="frame" x="125" y="7" width="187" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -416,7 +416,7 @@
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pro-ke-uN2">
                                                     <rect key="frame" x="125" y="7" width="187" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -435,7 +435,7 @@
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ukZ-5o-Lq8">
                                                     <rect key="frame" x="125" y="7" width="187" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -458,7 +458,7 @@
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5MX-wh-D3h">
                                                     <rect key="frame" x="125" y="7" width="187" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -477,7 +477,7 @@
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="U0T-qT-TVY">
                                                     <rect key="frame" x="125" y="7" width="187" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <textInputTraits key="textInputTraits"/>
+                                                    <textInputTraits key="textInputTraits" returnKeyType="done"/>
                                                 </textField>
                                             </subviews>
                                         </tableViewCellContentView>
@@ -514,10 +514,21 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="yy1-FU-48u"/>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="bankBankCode" destination="U0T-qT-TVY" id="S3T-y8-4Hm"/>
+                        <outlet property="bankeAccount" destination="5MX-wh-D3h" id="Ppu-Yq-ecj"/>
+                        <outlet property="eventCity" destination="X8j-dM-QDU" id="iLj-sc-vIy"/>
+                        <outlet property="eventDate" destination="fnM-Nn-tqm" id="jqb-cT-1K1"/>
+                        <outlet property="eventName" destination="Ub4-pz-NXQ" id="5fx-WH-RvZ"/>
+                        <outlet property="eventPrice" destination="LVw-Iu-wFi" id="K9v-ka-Py8"/>
+                        <outlet property="personEmail" destination="ukZ-5o-Lq8" id="JQg-sF-GjA"/>
+                        <outlet property="personName" destination="dqB-vW-euw" id="O3U-bm-n6X"/>
+                        <outlet property="personPhone" destination="Pro-ke-uN2" id="Xc9-6w-ZJb"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oRI-LA-tCi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1013" y="829"/>
+            <point key="canvasLocation" x="1013" y="155"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="mlF-2f-gVN">
@@ -543,6 +554,7 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iJE-VS-vKM" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="jEr-sE-Kf2">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -554,7 +566,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C1E-dR-m3H" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="601" y="155"/>
+            <point key="canvasLocation" x="601" y="-481"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ZWX-mi-Ijv">
@@ -573,7 +585,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qRB-l2-PPq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="601" y="829"/>
+            <point key="canvasLocation" x="601" y="155"/>
         </scene>
     </scenes>
 </document>
