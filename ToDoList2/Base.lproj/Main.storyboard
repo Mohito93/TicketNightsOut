@@ -483,8 +483,16 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Sell A Ticket" id="nWm-La-AtV">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="s5b-bh-VQi"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="yy1-FU-48u"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="s5b-bh-VQi">
+                            <connections>
+                                <segue destination="Lwg-9N-NPQ" kind="unwind" unwindAction="unwindToList:" id="lHn-Kt-mP2"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="yy1-FU-48u">
+                            <connections>
+                                <segue destination="Lwg-9N-NPQ" kind="unwind" unwindAction="unwindToList:" id="eYF-wB-s3n"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
@@ -495,6 +503,7 @@
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oRI-LA-tCi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Lwg-9N-NPQ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1013" y="155"/>
         </scene>
