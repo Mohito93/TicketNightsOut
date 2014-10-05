@@ -53,10 +53,6 @@
         self.sellTicket.sellerEmail = self.personEmail.text;
         
         self.sellTicket.ticketSold = NO;
-        
-//        self.toDoItem = [[XYZToDoItem alloc] init];
-//        self.toDoItem.itemName = self.textField.text;
-//        self.toDoItem.completed = NO;
     }
 }
 
