@@ -288,7 +288,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fnM-Nn-tqm">
-                                                    <rect key="frame" x="125" y="7" width="187" height="30"/>
+                                                    <rect key="frame" x="125" y="8" width="187" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" returnKeyType="next"/>
                                                 </textField>
@@ -450,6 +450,7 @@
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="doneButton" destination="yy1-FU-48u" id="F92-pK-KDr"/>
                         <outlet property="eventCity" destination="X8j-dM-QDU" id="iLj-sc-vIy"/>
                         <outlet property="eventDate" destination="fnM-Nn-tqm" id="jqb-cT-1K1"/>
                         <outlet property="eventName" destination="Ub4-pz-NXQ" id="5fx-WH-RvZ"/>
@@ -459,7 +460,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oRI-LA-tCi" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="Lwg-9N-NPQ" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1013" y="155"/>
+            <point key="canvasLocation" x="1013" y="154"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="mlF-2f-gVN">

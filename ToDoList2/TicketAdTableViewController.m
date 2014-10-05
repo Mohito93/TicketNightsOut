@@ -7,6 +7,7 @@
 //
 
 #import "TicketAdTableViewController.h"
+#import "SellTicketTableViewController.h"
 #import "SellTicket.h"
 
 @interface TicketAdTableViewController ()

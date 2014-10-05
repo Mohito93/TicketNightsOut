@@ -7,6 +7,7 @@
 //
 
 #import "SellTicketTableViewController.h"
+#import "SellTicket.h"
 
 @interface SellTicketTableViewController ()
 
@@ -18,12 +19,46 @@
 @property (weak, nonatomic) IBOutlet UITextField *personName;
 @property (weak, nonatomic) IBOutlet UITextField *personPhone;
 @property (weak, nonatomic) IBOutlet UITextField *personEmail;
-@property (weak, nonatomic) IBOutlet UITextField *bankeAccount;
+@property (weak, nonatomic) IBOutlet UITextField *bankAccount;
 @property (weak, nonatomic) IBOutlet UITextField *bankBankCode;
+
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *doneButton;
 
 @end
 
 @implementation SellTicketTableViewController
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if (sender != self.doneButton) return;
+    
+    if (self.eventName.text.length > 0
+        && self.eventDate.text.length > 0
+        && self.eventCity.text.length > 0
+        && self.eventPrice.text.length > 0
+        && self.personName.text.length > 0
+        && self.personPhone.text.length > 0
+        && self.personEmail.text.length > 0
+        && self.bankAccount.text.length > 0
+        && self.bankBankCode.text.length > 0) {
+        
+        self.sellTicket = [[SellTicket alloc] init];
+        
+        self.sellTicket.eventName = self.eventName.text;
+        self.sellTicket.eventData = self.eventName.text;
+        self.sellTicket.eventCity = self.eventName.text;
+        self.sellTicket.eventPrice = self.eventName.text;
+        self.sellTicket.sellerName = self.personName.text;
+        self.sellTicket.sellerPhone = self.personPhone.text;
+        self.sellTicket.sellerEmail = self.personEmail.text;
+        
+        self.sellTicket.ticketSold = NO;
+        
+//        self.toDoItem = [[XYZToDoItem alloc] init];
+//        self.toDoItem.itemName = self.textField.text;
+//        self.toDoItem.completed = NO;
+    }
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
