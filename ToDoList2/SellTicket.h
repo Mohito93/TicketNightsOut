@@ -22,4 +22,6 @@
 @property NSString *bankAccount;
 @property NSString *bankBankCode;
 
+@property BOOL ticketSold;
+
 @end

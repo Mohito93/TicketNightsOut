@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SellTicket.h"  
 
 @interface SellTicketTableViewController : UITableViewController
+
+@property SellTicket *sellTicket;
 
 @end
