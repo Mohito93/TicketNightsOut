@@ -27,7 +27,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="UZI-NB-vb0" kind="push" identifier="buyTicket" id="vtL-F4-Mz3"/>
+                                    <segue destination="UZI-NB-vb0" kind="push" id="SZq-RG-1el"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="6KD-P1-m2h" style="IBUITableViewCellStyleDefault" id="rqm-A9-Se3">
