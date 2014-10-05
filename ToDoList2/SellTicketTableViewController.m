@@ -33,24 +33,27 @@
     if (sender != self.doneButton) return;
     
     if (self.eventName.text.length > 0
-        && self.eventDate.text.length > 0
-        && self.eventCity.text.length > 0
-        && self.eventPrice.text.length > 0
-        && self.personName.text.length > 0
-        && self.personPhone.text.length > 0
-        && self.personEmail.text.length > 0
-        && self.bankAccount.text.length > 0
-        && self.bankBankCode.text.length > 0) {
+//        && self.eventDate.text.length > 0
+//        && self.eventCity.text.length > 0
+//        && self.eventPrice.text.length > 0
+//        && self.personName.text.length > 0
+//        && self.personPhone.text.length > 0
+//        && self.personEmail.text.length > 0
+//        && self.bankAccount.text.length > 0
+//        && self.bankBankCode.text.length > 0
+        ) {
         
         self.sellTicket = [[SellTicket alloc] init];
         
         self.sellTicket.eventName = self.eventName.text;
-        self.sellTicket.eventData = self.eventName.text;
-        self.sellTicket.eventCity = self.eventName.text;
-        self.sellTicket.eventPrice = self.eventName.text;
+        self.sellTicket.eventData = self.eventDate.text;
+        self.sellTicket.eventCity = self.eventCity.text;
+        self.sellTicket.eventPrice = self.eventPrice.text;
         self.sellTicket.sellerName = self.personName.text;
         self.sellTicket.sellerPhone = self.personPhone.text;
         self.sellTicket.sellerEmail = self.personEmail.text;
+        self.sellTicket.bankAccount = self.bankAccount.text;
+        self.sellTicket.bankBankCode = self.bankBankCode.text;
         
         self.sellTicket.ticketSold = NO;
     }
@@ -74,13 +77,11 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
     return 9;
 }

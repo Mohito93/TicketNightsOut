@@ -21,12 +21,12 @@
 
 - (IBAction)unwindToList:(UIStoryboardSegue *)segue
 {
-    //    AddToDoItemViewController *source = [segue sourceViewController];
-    //    ToDoItem *item = source.toDoItem;
-    //    if (item != nil) {
-    //        [self.toDoItems addObject:item];
-    //        [self.tableView reloadData];
-    //    }
+        SellTicketTableViewController *source = [segue sourceViewController];
+        SellTicket *ticket = source.sellTicket;
+        if (ticket != nil) {
+            [self.events addObject:ticket];
+            [self.tableView reloadData];
+        }
 }
 
 - (void)viewDidLoad {
@@ -61,13 +61,11 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
     return [self.events count];
 }
