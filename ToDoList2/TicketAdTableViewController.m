@@ -9,6 +9,7 @@
 #import "TicketAdTableViewController.h"
 #import "SellTicketTableViewController.h"
 #import "SellTicket.h"
+#import "BuyTicketViewController.h"
 
 @interface TicketAdTableViewController ()
 
@@ -125,5 +126,14 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([segue.identifier isEqualToString:@"buyTicket"]) {
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        BuyTicketViewController *destViewController = segue.destinationViewController;
+        SellTicket *curr = [self.events objectAtIndex:indexPath.row];
+        destViewController.eventName = curr.eventName;
+    }
+}
 
 @end

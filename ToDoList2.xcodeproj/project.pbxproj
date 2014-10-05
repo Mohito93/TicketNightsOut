@@ -17,6 +17,7 @@
 		5BFD44AB19E03B3500A314E6 /* ToDoList2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BFD44AA19E03B3500A314E6 /* ToDoList2Tests.m */; };
 		E43011B319E0B7D000F7756C /* TicketAdTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E43011B219E0B7D000F7756C /* TicketAdTableViewController.m */; };
 		E43011B619E0BBFC00F7756C /* BuyTicketTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E43011B519E0BBFC00F7756C /* BuyTicketTableViewController.m */; };
+		E43011B919E0C6FA00F7756C /* BuyTicketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E43011B819E0C6FA00F7756C /* BuyTicketViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,8 @@
 		E43011B219E0B7D000F7756C /* TicketAdTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TicketAdTableViewController.m; sourceTree = "<group>"; };
 		E43011B419E0BBFC00F7756C /* BuyTicketTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuyTicketTableViewController.h; sourceTree = "<group>"; };
 		E43011B519E0BBFC00F7756C /* BuyTicketTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuyTicketTableViewController.m; sourceTree = "<group>"; };
+		E43011B719E0C6FA00F7756C /* BuyTicketViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuyTicketViewController.h; sourceTree = "<group>"; };
+		E43011B819E0C6FA00F7756C /* BuyTicketViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuyTicketViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +105,8 @@
 				5BA0783319E0981C00DE9200 /* SellTicketTableViewController.m */,
 				E43011B419E0BBFC00F7756C /* BuyTicketTableViewController.h */,
 				E43011B519E0BBFC00F7756C /* BuyTicketTableViewController.m */,
+				E43011B719E0C6FA00F7756C /* BuyTicketViewController.h */,
+				E43011B819E0C6FA00F7756C /* BuyTicketViewController.m */,
 				E43011B119E0B7D000F7756C /* TicketAdTableViewController.h */,
 				E43011B219E0B7D000F7756C /* TicketAdTableViewController.m */,
 				5BFD449B19E03B3500A314E6 /* Images.xcassets */,
@@ -241,6 +246,7 @@
 				5BA0783D19E09ECC00DE9200 /* SellTicket.m in Sources */,
 				5BFD449419E03B3500A314E6 /* AppDelegate.m in Sources */,
 				5BFD449119E03B3500A314E6 /* main.m in Sources */,
+				E43011B919E0C6FA00F7756C /* BuyTicketViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
