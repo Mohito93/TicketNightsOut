@@ -18,6 +18,8 @@
 		E43011B319E0B7D000F7756C /* TicketAdTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E43011B219E0B7D000F7756C /* TicketAdTableViewController.m */; };
 		E43011B619E0BBFC00F7756C /* BuyTicketTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E43011B519E0BBFC00F7756C /* BuyTicketTableViewController.m */; };
 		E43011B919E0C6FA00F7756C /* BuyTicketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E43011B819E0C6FA00F7756C /* BuyTicketViewController.m */; };
+		E4A8E60519E0FA2A00E9B524 /* Empty.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4A8E60419E0FA2A00E9B524 /* Empty.xib */; };
+		E4A8E60B19E0FE2A00E9B524 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E4A8E60A19E0FE2A00E9B524 /* CustomCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,9 @@
 		E43011B519E0BBFC00F7756C /* BuyTicketTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuyTicketTableViewController.m; sourceTree = "<group>"; };
 		E43011B719E0C6FA00F7756C /* BuyTicketViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BuyTicketViewController.h; sourceTree = "<group>"; };
 		E43011B819E0C6FA00F7756C /* BuyTicketViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BuyTicketViewController.m; sourceTree = "<group>"; };
+		E4A8E60419E0FA2A00E9B524 /* Empty.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Empty.xib; sourceTree = "<group>"; };
+		E4A8E60919E0FE2A00E9B524 /* CustomCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CustomCell.h; path = ../CustomCell.h; sourceTree = "<group>"; };
+		E4A8E60A19E0FE2A00E9B524 /* CustomCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CustomCell.m; path = ../CustomCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +103,10 @@
 				5BFD449319E03B3500A314E6 /* AppDelegate.m */,
 				5BFD449519E03B3500A314E6 /* ViewController.h */,
 				5BFD449619E03B3500A314E6 /* ViewController.m */,
+				E4A8E60919E0FE2A00E9B524 /* CustomCell.h */,
+				E4A8E60A19E0FE2A00E9B524 /* CustomCell.m */,
 				5BFD449819E03B3500A314E6 /* Main.storyboard */,
+				E4A8E60419E0FA2A00E9B524 /* Empty.xib */,
 				5BA0783B19E09ECC00DE9200 /* SellTicket.h */,
 				5BA0783C19E09ECC00DE9200 /* SellTicket.m */,
 				5BA0783219E0981C00DE9200 /* SellTicketTableViewController.h */,
@@ -220,6 +228,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4A8E60519E0FA2A00E9B524 /* Empty.xib in Resources */,
 				5BFD449A19E03B3500A314E6 /* Main.storyboard in Resources */,
 				5BFD449C19E03B3500A314E6 /* Images.xcassets in Resources */,
 			);
@@ -247,6 +256,7 @@
 				5BFD449419E03B3500A314E6 /* AppDelegate.m in Sources */,
 				5BFD449119E03B3500A314E6 /* main.m in Sources */,
 				E43011B919E0C6FA00F7756C /* BuyTicketViewController.m in Sources */,
+				E4A8E60B19E0FE2A00E9B524 /* CustomCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
