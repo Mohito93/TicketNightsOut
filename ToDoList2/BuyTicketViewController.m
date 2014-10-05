@@ -10,6 +10,10 @@
 
 @interface BuyTicketViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *eventLabel;
+@property (weak, nonatomic) IBOutlet UILabel *priceLabel;
+@property (weak, nonatomic) IBOutlet UILabel *cityLabel;
+@property (weak, nonatomic) IBOutlet UILabel *dateLabel;
+
 
 @end
 
@@ -30,8 +34,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    NSLog(eventName);
+    NSLog(_eventData);
     _eventLabel.text = self.eventName;
+    _dateLabel.text = self.eventData;
+    _cityLabel.text = self.eventCity;
+    _priceLabel.text = self.eventPrice;
 }
 
 - (void)didReceiveMemoryWarning {

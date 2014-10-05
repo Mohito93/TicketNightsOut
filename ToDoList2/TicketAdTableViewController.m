@@ -132,6 +132,9 @@
         SellTicket *curr = [_events objectAtIndex:indexPath.row];
 //        NSLog(curr.eventName);
         destViewController.eventName = curr.eventName;
+        destViewController.eventData = curr.eventData;
+        destViewController.eventCity = curr.eventCity;
+        destViewController.eventPrice = curr.eventPrice;
     }
 }
 
