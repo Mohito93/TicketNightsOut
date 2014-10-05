@@ -13,7 +13,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ListPrototypeCell" textLabel="fhH-Bl-ONb" style="IBUITableViewCellStyleDefault" id="FLA-N3-Xsf">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="ListPrototypeCell" textLabel="fhH-Bl-ONb" style="IBUITableViewCellStyleDefault" id="FLA-N3-Xsf">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="FLA-N3-Xsf" id="nGW-jA-ra6">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -26,6 +26,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="UZI-NB-vb0" kind="push" identifier="buyTicket" id="vtL-F4-Mz3"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="6KD-P1-m2h" style="IBUITableViewCellStyleDefault" id="rqm-A9-Se3">
                                 <autoresizingMask key="autoresizingMask"/>
@@ -110,9 +113,6 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="TMg-Ti-ztq" kind="push" identifier="buyTicket" id="EEF-Wb-cpB"/>
-                                </connections>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="blZ-HV-aFe" style="IBUITableViewCellStyleDefault" id="uzj-8S-NFh">
                                 <autoresizingMask key="autoresizingMask"/>
@@ -142,7 +142,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="lI1-GM-Bro" style="IBUITableViewCellStyleDefault" id="t8U-FT-hoN">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="lI1-GM-Bro" style="IBUITableViewCellStyleDefault" id="t8U-FT-hoN">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="t8U-FT-hoN" id="7Kq-sv-6KC">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -244,7 +244,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="osO-TM-nmT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="179" y="155"/>
+            <point key="canvasLocation" x="67" y="765"/>
         </scene>
         <!--Sell A Ticket-->
         <scene sceneID="Xdp-xg-jlh">
@@ -501,45 +501,32 @@
             <point key="canvasLocation" x="601" y="155"/>
         </scene>
         <!--Buy TIcket-->
-        <scene sceneID="UPa-yy-GTb">
+        <scene sceneID="7KF-q9-ZxR">
             <objects>
-                <tableViewController id="TMg-Ti-ztq" customClass="BuyTicketTableViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="bGZ-Id-Sbs">
+                <viewController id="UZI-NB-vb0" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Pkw-kp-oiQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="QmR-sO-67Y"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tP9-hG-0Kc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Iu1-Mu-7na">
+                                <rect key="frame" x="139" y="273" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TicketInfo" id="7r6-OU-hQJ">
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7r6-OU-hQJ" id="3Xn-bz-UH1">
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="9f8-Ff-sJi">
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9f8-Ff-sJi" id="L6s-PY-wZn">
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="3q3-28-WYv">
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3q3-28-WYv" id="TsY-4m-C6r">
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <sections/>
-                        <connections>
-                            <outlet property="dataSource" destination="TMg-Ti-ztq" id="NRP-rn-Gup"/>
-                            <outlet property="delegate" destination="TMg-Ti-ztq" id="dI4-GU-0M0"/>
-                        </connections>
-                    </tableView>
-                    <navigationItem key="navigationItem" title="Buy TIcket" id="wgP-H4-t4L"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Buy TIcket" id="sfI-yw-Dvu"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="wvH-gf-ziC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mzw-u3-l9X" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="621" y="889"/>
+            <point key="canvasLocation" x="469" y="759"/>
         </scene>
     </scenes>
 </document>
