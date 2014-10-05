@@ -1,5 +1,5 @@
 //
-//  BuyTicketTableViewController.h
+//  BuyTicketViewController.h
 //  ToDoList2
 //
 //  Created by Mohit on 5/10/14.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BuyTicketTableViewController : UITableViewController
+@interface BuyTicketViewController : UIViewController
 @property NSString *eventName;
 @property NSString *eventData;
 @property NSString *eventCity;
