@@ -129,7 +129,8 @@
     if ([segue.identifier isEqualToString:@"buyTicket"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         BuyTicketViewController *destViewController = segue.destinationViewController;
-        SellTicket *curr = [self.events objectAtIndex:indexPath.row];
+        SellTicket *curr = [_events objectAtIndex:indexPath.row];
+//        NSLog(curr.eventName);
         destViewController.eventName = curr.eventName;
     }
 }
